@@ -34,7 +34,7 @@ def get_distances(listdata):
         pina = i[0]['address'].address
         pinb = i[1]['address'].address
         distance = geopy.distance.geodesic(
-            (i[0]['coord'].get('latitude'),i[0]['coord'].get('longitude')) ,
+            (i[0]['coord'].get('latitude'),i[0]['coord'].get('longitude')),
             (i[1]['coord'].get('latitude'),i[1]['coord'].get('longitude'))
         ).meters
         result.append({
@@ -54,10 +54,10 @@ def set_nearest_farest(listdata):
     listdata.update(
         {
             'nearest': [
-                list['distances'][-1]
+                listdata['distances'][-1]
             ],
             'farest': [
-                list['distances'][0]
+                listdata['distances'][0]
             ]
         }
     )
