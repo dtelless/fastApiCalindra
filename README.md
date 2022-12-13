@@ -1,7 +1,3 @@
-## 📜 Descrição
-
-
-
 # 1️⃣ Projeto Backend Calindra
 
 O projeto consiste na construção de uma API REST que consuma a API de Geolocalização do Google e retorne:
@@ -127,5 +123,46 @@ curl -X 'POST' \
    ]
 }'
 ```
+
+Resposta:
+````
+{
+    "status": "SUCCESS",
+    "data": {
+        "distances": [
+            {
+                "pinA": "Av. Rio Branco, 1 Centro, Rio de Janeiro RJ,20090003",
+                "pinB": "Rua 19 de Fevereiro, 34 Botafogo, Rio de Janeiro RJ, 22280030",
+                "distance": 5960
+            },
+            {
+                "pinA": "Praça Mal. Âncora, 122 Centro, Rio de Janeiro RJ, 20021200",
+                "pinB": "Rua 19 de Fevereiro, 34 Botafogo, Rio de Janeiro RJ, 22280030",
+                "distance": 5476
+            },
+            {
+                "pinA": "Av. Rio Branco, 1 Centro, Rio de Janeiro RJ,20090003",
+                "pinB": "Praça Mal. Âncora, 122 Centro, Rio de Janeiro RJ, 20021200",
+                "distance": 1253
+            }
+        ],
+        "nearest": [
+            {
+                "pinA": "Av. Rio Branco, 1 Centro, Rio de Janeiro RJ,20090003",
+                "pinB": "Praça Mal. Âncora, 122 Centro, Rio de Janeiro RJ, 20021200",
+                "distance": 1253
+            }
+        ],
+        "farest": [
+            {
+                "pinA": "Av. Rio Branco, 1 Centro, Rio de Janeiro RJ,20090003",
+                "pinB": "Rua 19 de Fevereiro, 34 Botafogo, Rio de Janeiro RJ, 22280030",
+                "distance": 5960
+            }
+        ]
+    }
+}
+
+````
 
 <br>
