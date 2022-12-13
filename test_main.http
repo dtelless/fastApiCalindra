@@ -1,0 +1,11 @@
+POST http://127.0.0.1:8000/adresses
+Content-Type: application/json
+
+{
+   "adresses":
+   [
+       {"address": "Av. Rio Branco, 1 Centro, Rio de Janeiro RJ,20090003"},
+       {"address": "Praça Mal. Âncora, 122 Centro, Rio de Janeiro RJ, 20021200"},
+       {"address": "Rua 19 de Fevereiro, 34 Botafogo, Rio de Janeiro RJ, 22280030"}
+   ]
+}
